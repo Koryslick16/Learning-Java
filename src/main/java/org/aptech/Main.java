@@ -117,27 +117,39 @@ public class Main {
 //          for (int i=1; i<=5; i++){
 
 //          }
-        int[][] myArr = new int[3][3];
-        myArr[0][0] = 3;
-        myArr[0][1] = 1;
-        myArr[0][2] = 6;
-        myArr[1][0] = 2;
-        myArr[1][1] = 4;
-        myArr[1][2] = 10;
-        myArr[2][0] = 5;
-        myArr[2][1] = 12;
-        myArr[2][2] = 9;
+        int[][] myArr = {
+                {3, 1, 6},
+                {2, 4, 10},
+                {5, 12, 9}
+        };
 
-        int[][] secondArr = new int[3][3];
-        secondArr[0][0] = 8;
-        secondArr[0][1] = 7;
-        secondArr[0][2] = 6;
-        secondArr[1][0] = 13;
-        secondArr[1][1] = 20;
-        secondArr[1][2] = 9;
-        secondArr[2][0] = 11;
-        secondArr[2][1] = 7;
-        secondArr[2][2] = 5;
+//        int[][] myArr = new int[3][3];
+//        myArr[0][0] = 3;
+//        myArr[0][1] = 1;
+//        myArr[0][2] = 6;
+//        myArr[1][0] = 2;
+//        myArr[1][1] = 4;
+//        myArr[1][2] = 10;
+//        myArr[2][0] = 5;
+//        myArr[2][1] = 12;
+//        myArr[2][2] = 9;
+
+        int[][] secondArr = {
+                {8, 7, 6},
+                {13, 20, 9},
+                {11, 7, 5}
+        };
+
+//        int[][] secondArr = new int[3][3];
+//        secondArr[0][0] = 8;
+//        secondArr[0][1] = 7;
+//        secondArr[0][2] = 6;
+//        secondArr[1][0] = 13;
+//        secondArr[1][1] = 20;
+//        secondArr[1][2] = 9;
+//        secondArr[2][0] = 11;
+//        secondArr[2][1] = 7;
+//        secondArr[2][2] = 5;
 
         for(int i = 0; i < myArr.length; i++) {
               for (int j = 0; j < myArr[i].length; j++) {
@@ -168,6 +180,17 @@ public class Main {
             }
             System.out.println("");
         }
+
+        QuadraticEquation equation = new QuadraticEquation();
+        System.out.println("Enter a, b, and c respectively: ");
+        double a, b, c;
+        a = scanner.nextDouble();
+        b = scanner.nextDouble();
+        c = scanner.nextDouble();
+
+       double d = equation.findD(a, b, c);
+//        System.out.println("D ="+ d);
+       equation.solveEquation(a, b, c, d);
 
 
 
