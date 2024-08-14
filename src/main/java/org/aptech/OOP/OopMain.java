@@ -14,15 +14,25 @@ public class OopMain {
 
 //        Arithmetic arith = new Arithmetic();
 //        System.out.println(arith.add(5, 6, 9, 23));
-        var cCard = new CreditCard();
-        var payStack = new PayStack();
-        var fWave = new FlutterWave();
-        Payment payment = new Payment();
-        payStack.amount = 3400.00;
-        payStack.payOut();
-        fWave.amount = 2760.00;
-        fWave.payOut();
-        cCard.amount = 4130.00;
-        cCard.payOut();
+//        var cCard = new CreditCard();
+//        var payStack = new PayStack();
+//        var fWave = new FlutterWave();
+//        Payment payment = new Payment();
+//        payStack.amount = 3400.00;
+//        payStack.payOut();
+//        fWave.amount = 2760.00;
+//        fWave.payOut();
+//        cCard.amount = 4130.00;
+//        cCard.payOut();
+
+//        using the main abstract to create an instance of Ferrari, Ferrari can be instantied normally as it is the extension of the abstract class and is not an abstract class itself
+        Car car = new Ferrari();
+        System.out.println(car.acceleration(280));
+
     }
 }
+
+// ABSTRACT CLASS
+// Abstract method cannot have a body. you cannot create an instance of the class, an abstract class cannot be instantiated
+// abstract method must be public, u need a key word.
+// instance of interface cannot be created as it is not a class
