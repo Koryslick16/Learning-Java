@@ -53,24 +53,24 @@ public class ArrayListDemo {
 //        numbers.stream().forEach(System.out::println);
 
 
-        ArrayList<String> fruits = new ArrayList<>();
-        fruits.add("Banana");
-        fruits.add("Orange");
-        fruits.add("Beans");
-        fruits.add("Pineapple");
-        fruits.add("Banana");
-        fruits.add("Pineapple");
-
-        fruits.removeIf(fruit->fruit.startsWith("O"));
-        System.out.println(fruits);
-
-      int banana =  fruits.indexOf("Banana");
-        System.out.println(banana);
-        int pine =fruits.lastIndexOf("Pineapple");
-        System.out.println(pine);
-
-        int size = fruits.size();
-        System.out.println(fruits.get(size-1));
+//        ArrayList<String> fruits = new ArrayList<>();
+//        fruits.add("Banana");
+//        fruits.add("Orange");
+//        fruits.add("Beans");
+//        fruits.add("Pineapple");
+//        fruits.add("Banana");
+//        fruits.add("Pineapple");
+//
+//        fruits.removeIf(fruit->fruit.startsWith("O"));
+//        System.out.println(fruits);
+//
+//      int banana =  fruits.indexOf("Banana");
+//        System.out.println(banana);
+//        int pine =fruits.lastIndexOf("Pineapple");
+//        System.out.println(pine);
+//
+//        int size = fruits.size();
+//        System.out.println(fruits.get(size-1));
     }
 }
 //collection deals with size
