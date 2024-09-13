@@ -14,5 +14,7 @@ public class TransactMain {
         tp.addTransaction(bk2);
         tp.addTransaction(bk3);
         tp.addTransaction(bk4);
+
+        tp.allTransaction();
     }
 }
