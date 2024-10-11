@@ -125,8 +125,7 @@ public class StringDemo {
         Arrays.sort(strArray2);
          int length = strArray.length;
         for (int i = 0; i< length; i++){
-//            for (int  j= 0; j< length; i++){
-//            }
+
             if (strArray[i] != strArray2[i]){
                 return false;
             }
