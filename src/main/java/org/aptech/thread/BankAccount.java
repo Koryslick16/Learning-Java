@@ -27,7 +27,7 @@ public class BankAccount {
     public synchronized boolean withdrawal(double amount){
         if (balance >= amount){
             balance -= amount;
-            System.out.println("\n" +Thread.currentThread().getName()+ " withdrawal " + amount + ".\nRemaining balance: "+ balance);
+            System.out.println("\n" +Thread.currentThread().getName()+ " withdrew " + amount + ".\nRemaining balance: "+ balance);
             return true;
         }
         else {
